@@ -120,10 +120,7 @@
     </content>
     <orderEntry type="jdk" jdkName="RVM: ruby-2.0.0-p247 [shapeshifter]" jdkType="RUBY_SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
-    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.3.5, RVM: ruby-1.9.3-p194 [kitfox-shell-dev-engine]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="coffee-script (v2.2.0, RVM: ruby-1.9.3-p194 [kitfox-shell-dev-engine]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="erubis (v2.7.0, RVM: ruby-1.9.3-p194 [kitfox-shell-dev-engine]) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="rack-test (v0.6.2, RVM: ruby-1.9.3-p194 [kitfox-shell-dev-engine]) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="bundler (v1.5.3, RVM: ruby-2.0.0-p247 [shapeshifter]) [gem]" level="application" />
   </component>
   <component name="RModuleSettingsStorage">
     <LOAD_PATH number="0" />
