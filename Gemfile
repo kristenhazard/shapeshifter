@@ -7,6 +7,9 @@ gem 'arel', '4.0.0'
 # Use sqlite3 as the database for Active Record
 gem 'pg'
 
+# Use HAML for templates
+gem 'haml-rails', '0.5.1'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -21,6 +24,10 @@ gem 'coffee-rails', '~> 4.0.0'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
+gem 'jquery-ui-rails', '4.1.1'
+
+# Use Modernizr for browser feature detection
+gem 'modernizr-rails', '2.7.1'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 # gem 'turbolinks'
@@ -59,3 +66,6 @@ end
 
 # Use Bootstrap for application styling
 gem 'bootstrap-generators', '3.1.0'
+
+# hanuman engine
+gem 'hanuman', path: "../hanuman"
