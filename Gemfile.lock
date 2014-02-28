@@ -186,6 +186,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  animate-rails (= 1.0.4)
   arel (= 4.0.0)
   awesome_print
   bootstrap-generators (= 3.1.0)

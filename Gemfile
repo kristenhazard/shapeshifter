@@ -40,6 +40,27 @@ group :doc do
   gem 'sdoc', require: false
 end
 
+gem 'thin'
+gem 'awesome_print'
+
+group :development do
+  gem 'guard'
+  gem 'guard-livereload', require: false
+  gem 'rack-livereload'
+  gem 'quiet_assets'
+end
+
+# Use Bootstrap for application styling
+gem 'bootstrap-generators', '3.1.0'
+
+# Use Animate.css for special effects styling
+gem 'animate-rails', '1.0.4'
+
+# hanuman engine
+gem 'hanuman', path: "../hanuman"
+
+
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
 
@@ -51,21 +72,3 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
-
-
-gem 'thin'
-gem 'awesome_print'
-
-gem 'quiet_assets', :group => :development
-
-group :development do
-  gem 'guard'
-  gem 'guard-livereload', require: false
-  gem 'rack-livereload'
-end
-
-# Use Bootstrap for application styling
-gem 'bootstrap-generators', '3.1.0'
-
-# hanuman engine
-gem 'hanuman', path: "../hanuman"
