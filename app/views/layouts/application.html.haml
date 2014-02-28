@@ -29,7 +29,7 @@
             %li.active
               = link_to "Home", root_path
             %li
-              = link_to "Hanuman", hanuman.organizations_path
+              = link_to "Hanuman", hanuman.root_path
     .container
       - flash.each do |name, msg|
         = content_tag :div, :class => "alert alert-#{name == :error ? "danger" : "success" } alert-dismissable" do
