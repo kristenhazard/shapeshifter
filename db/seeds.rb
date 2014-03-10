@@ -268,7 +268,7 @@ Hanuman::SurveyQuestion.create([
                           survey_template_id: generic_survey.id,
                           question_id: q17.id,
                           order: 17,
-                          duplicator: true,
+                          duplicator: false,
                           group: "step 3"
                         }
                       ])
