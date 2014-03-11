@@ -36,6 +36,7 @@ Hanuman::AnswerType.create([
                     {name: 'password', status: 'active'},
                     {name: 'radio', status: 'active'},
                     {name: 'checkbox', status: 'active'},
+                    {name: 'checkboxlist', status: 'active'},
                     {name: 'textarea', status: 'active'},
                     {name: 'select', status: 'active'},
                     {name: 'multiselect', status: 'active'},
@@ -61,6 +62,7 @@ answer_time = Hanuman::AnswerType.where("name='time'").first
 
 answer_textarea = Hanuman::AnswerType.where("name='textarea'").first
 answer_checkbox = Hanuman::AnswerType.where("name='checkbox'").first
+answer_checkboxlist = Hanuman::AnswerType.where("name='checkboxlist'").first
 answer_radio = Hanuman::AnswerType.where("name='radio'").first
 answer_select = Hanuman::AnswerType.where("name='select'").first
 answer_multiselect = Hanuman::AnswerType.where("name='multiselect'").first
@@ -81,26 +83,21 @@ q2 = Hanuman::Question.create(question_text: 'Date', answer_type_id: answer_date
 q3 = Hanuman::Question.create(question_text: 'Time', answer_type_id: answer_time.id)
 q4 = Hanuman::Question.create(question_text: 'TextArea', answer_type_id: answer_textarea.id)
 q5 = Hanuman::Question.create(question_text: 'CheckBox', answer_type_id: answer_checkbox.id)
-q6 = Hanuman::Question.create(question_text: 'RadioButton', answer_type_id: answer_radio.id)
-q7 = Hanuman::Question.create(question_text: 'Select', answer_type_id: answer_select.id)
-q8 = Hanuman::Question.create(question_text: 'MultiSelect', answer_type_id: answer_multiselect.id)
-q9 = Hanuman::Question.create(question_text: 'TypeAhead', answer_type_id: answer_typeahead.id)
-q10 = Hanuman::Question.create(question_text: 'ChosenSelect', answer_type_id: answer_chosenselect.id)
-q11 = Hanuman::Question.create(question_text: 'ChosenMultiSelect', answer_type_id: answer_chosenmultiselect.id)
+q6 = Hanuman::Question.create(question_text: 'CheckBoxList', answer_type_id: answer_checkboxlist.id)
+q7 = Hanuman::Question.create(question_text: 'RadioButton', answer_type_id: answer_radio.id)
+q8 = Hanuman::Question.create(question_text: 'Select', answer_type_id: answer_select.id)
+q9 = Hanuman::Question.create(question_text: 'MultiSelect', answer_type_id: answer_multiselect.id)
+q10 = Hanuman::Question.create(question_text: 'TypeAhead', answer_type_id: answer_typeahead.id)
+q11 = Hanuman::Question.create(question_text: 'ChosenSelect', answer_type_id: answer_chosenselect.id)
+q12 = Hanuman::Question.create(question_text: 'ChosenMultiSelect', answer_type_id: answer_chosenmultiselect.id)
 
-q12 = Hanuman::Question.create(question_text: 'Duplicator Text', answer_type_id: answer_text.id)
-q13 = Hanuman::Question.create(question_text: 'Duplicator Date 1', answer_type_id: answer_date.id)
-q14 = Hanuman::Question.create(question_text: 'Duplicator Date 2', answer_type_id: answer_date.id)
-q15 = Hanuman::Question.create(question_text: 'ChosenSelect', answer_type_id: answer_chosenselect.id)
-q16 = Hanuman::Question.create(question_text: 'ChosenMultiSelect', answer_type_id: answer_chosenmultiselect.id)
+q13 = Hanuman::Question.create(question_text: 'Duplicator Text', answer_type_id: answer_text.id)
+q14 = Hanuman::Question.create(question_text: 'Duplicator Date 1', answer_type_id: answer_date.id)
+q15 = Hanuman::Question.create(question_text: 'Duplicator Date 2', answer_type_id: answer_date.id)
+q16 = Hanuman::Question.create(question_text: 'ChosenSelect', answer_type_id: answer_chosenselect.id)
+q17 = Hanuman::Question.create(question_text: 'ChosenMultiSelect', answer_type_id: answer_chosenmultiselect.id)
 
-q17 = Hanuman::Question.create(question_text: 'TextArea', answer_type_id: answer_textarea.id)
-
-Hanuman::AnswerChoice.create(question_id: q5.id, option_text: 'Red')
-Hanuman::AnswerChoice.create(question_id: q5.id, option_text: 'Blue')
-Hanuman::AnswerChoice.create(question_id: q5.id, option_text: 'Yellow')
-Hanuman::AnswerChoice.create(question_id: q5.id, option_text: 'Green')
-Hanuman::AnswerChoice.create(question_id: q5.id, option_text: 'White')
+q18 = Hanuman::Question.create(question_text: 'TextArea', answer_type_id: answer_textarea.id)
 
 Hanuman::AnswerChoice.create(question_id: q6.id, option_text: 'Red')
 Hanuman::AnswerChoice.create(question_id: q6.id, option_text: 'Blue')
@@ -138,17 +135,23 @@ Hanuman::AnswerChoice.create(question_id: q11.id, option_text: 'Yellow')
 Hanuman::AnswerChoice.create(question_id: q11.id, option_text: 'Green')
 Hanuman::AnswerChoice.create(question_id: q11.id, option_text: 'White')
 
-Hanuman::AnswerChoice.create(question_id: q15.id, option_text: 'Red')
-Hanuman::AnswerChoice.create(question_id: q15.id, option_text: 'Blue')
-Hanuman::AnswerChoice.create(question_id: q15.id, option_text: 'Yellow')
-Hanuman::AnswerChoice.create(question_id: q15.id, option_text: 'Green')
-Hanuman::AnswerChoice.create(question_id: q15.id, option_text: 'White')
+Hanuman::AnswerChoice.create(question_id: q12.id, option_text: 'Red')
+Hanuman::AnswerChoice.create(question_id: q12.id, option_text: 'Blue')
+Hanuman::AnswerChoice.create(question_id: q12.id, option_text: 'Yellow')
+Hanuman::AnswerChoice.create(question_id: q12.id, option_text: 'Green')
+Hanuman::AnswerChoice.create(question_id: q12.id, option_text: 'White')
 
 Hanuman::AnswerChoice.create(question_id: q16.id, option_text: 'Red')
 Hanuman::AnswerChoice.create(question_id: q16.id, option_text: 'Blue')
 Hanuman::AnswerChoice.create(question_id: q16.id, option_text: 'Yellow')
 Hanuman::AnswerChoice.create(question_id: q16.id, option_text: 'Green')
 Hanuman::AnswerChoice.create(question_id: q16.id, option_text: 'White')
+
+Hanuman::AnswerChoice.create(question_id: q17.id, option_text: 'Red')
+Hanuman::AnswerChoice.create(question_id: q17.id, option_text: 'Blue')
+Hanuman::AnswerChoice.create(question_id: q17.id, option_text: 'Yellow')
+Hanuman::AnswerChoice.create(question_id: q17.id, option_text: 'Green')
+Hanuman::AnswerChoice.create(question_id: q17.id, option_text: 'White')
 
 puts "Create SurveyQuestions"
 Hanuman::SurveyQuestion.create([
@@ -233,8 +236,8 @@ Hanuman::SurveyQuestion.create([
                           survey_template_id: generic_survey.id,
                           question_id: q12.id,
                           order: 12,
-                          duplicator: true,
-                          group: "step 2"
+                          duplicator: false,
+                          group: "step 1"
                         },
                         {
                           survey_template_id: generic_survey.id,
@@ -268,6 +271,13 @@ Hanuman::SurveyQuestion.create([
                           survey_template_id: generic_survey.id,
                           question_id: q17.id,
                           order: 17,
+                          duplicator: true,
+                          group: "step 2"
+                        },
+                        {
+                          survey_template_id: generic_survey.id,
+                          question_id: q18.id,
+                          order: 18,
                           duplicator: false,
                           group: "step 3"
                         }

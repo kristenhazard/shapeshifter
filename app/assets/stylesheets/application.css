@@ -10,6 +10,7 @@
  *
  *= require boilerplate-a
  *= require_self
+ *= require hanuman
  *= require bootstrap-generators
  *= require bootstrap-variables
  *= require jquery.ui.all
