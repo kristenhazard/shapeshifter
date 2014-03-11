@@ -2,13 +2,10 @@ PATH
   remote: ../hanuman
   specs:
     hanuman (0.0.1)
-      animate-rails
       arel (= 4.0.0)
-      bootstrap-generators
       coffee-rails
       haml-rails
       jquery-rails
-      jquery-ui-rails
       modernizr-rails
       rails (= 4.0.0)
       sass-rails
