@@ -26,10 +26,14 @@
           = link_to "shapeshifter", "#", :class => "navbar-brand"
         .collapse.navbar-collapse
           %ul.nav.navbar-nav
-            %li.active
+            %li{class: yield(:navbar_home)}
               = link_to "Home", root_path
-            %li
-              = link_to "Hanuman", hanuman.root_path
+            %li{class: "dropdown #{yield(:navbar_hanuman)}"}
+              %a.dropdown-toggle{"data-toggle" => "dropdown", href: "#"}
+                Hanuman
+                %b.caret
+              %ul.dropdown-menu
+                = render "layouts/hanuman"
     .container
       - flash.each do |name, msg|
         = content_tag :div, :class => "alert alert-#{name == :error ? "danger" : "success" } alert-dismissable" do
