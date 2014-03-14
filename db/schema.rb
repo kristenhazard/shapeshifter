@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140228194324) do
+ActiveRecord::Schema.define(version: 20140314041559) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -21,8 +21,11 @@ ActiveRecord::Schema.define(version: 20140228194324) do
     t.string   "option_text"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "scientific_text"
+    t.string   "ancestry"
   end
 
+  add_index "hanuman_answer_choices", ["ancestry"], name: "index_hanuman_answer_choices_on_ancestry", using: :btree
   add_index "hanuman_answer_choices", ["question_id"], name: "index_hanuman_answer_choices_on_question_id", using: :btree
 
   create_table "hanuman_answer_types", force: true do |t|
