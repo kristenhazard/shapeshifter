@@ -737,35 +737,35 @@ puts "Create Survey Questions"
 #report level single entry
 Hanuman::SurveyQuestion.create([
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q1.id,
     order: 1,
     duplicator: false,
     group: "step 1"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q2.id,
     order: 2,
     duplicator: false,
     group: "step 1"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q3.id,
     order: 3,
     duplicator: false,
     group: "step 1"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q4.id,
     order: 4,
     duplicator: false,
     group: "step 1"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q5.id,
     order: 5,
     duplicator: false,
@@ -775,126 +775,126 @@ Hanuman::SurveyQuestion.create([
 #line list multi person entry
 Hanuman::SurveyQuestion.create([
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q6.id,
     order: 6,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q7.id,
     order: 7,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q8.id,
     order: 8,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q9.id,
     order: 9,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q10.id,
     order: 10,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q11.id,
     order: 11,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q12.id,
     order: 12,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q13.id,
     order: 13,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q14.id,
     order: 14,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q15.id,
     order: 15,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q16.id,
     order: 16,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q17.id,
     order: 17,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q18.id,
     order: 18,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q19.id,
     order: 19,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q20.id,
     order: 20,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q21.id,
     order: 21,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q22.id,
     order: 22,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q23.id,
     order: 23,
     duplicator: true,
@@ -904,7 +904,7 @@ Hanuman::SurveyQuestion.create([
 #report level single entry
 Hanuman::SurveyQuestion.create([
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q24.id,
     order: 24,
     duplicator: false,
@@ -1017,35 +1017,35 @@ puts "Create Survey Questions"
 #report level single entry
 Hanuman::SurveyQuestion.create([
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q1.id,
     order: 1,
     duplicator: false,
     group: "step 1"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q2.id,
     order: 2,
     duplicator: false,
     group: "step 1"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q3.id,
     order: 3,
     duplicator: false,
     group: "step 1"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q4.id,
     order: 4,
     duplicator: false,
     group: "step 1"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q5.id,
     order: 5,
     duplicator: false,
@@ -1055,126 +1055,126 @@ Hanuman::SurveyQuestion.create([
 #line list multi person entry
 Hanuman::SurveyQuestion.create([
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q6.id,
     order: 6,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q7.id,
     order: 7,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q8.id,
     order: 8,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q9.id,
     order: 9,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q10.id,
     order: 10,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q11.id,
     order: 11,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q12.id,
     order: 12,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q13.id,
     order: 13,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q14.id,
     order: 14,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q15.id,
     order: 15,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q16.id,
     order: 16,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q17.id,
     order: 17,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q18.id,
     order: 18,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q19.id,
     order: 19,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q20.id,
     order: 20,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q21.id,
     order: 21,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q22.id,
     order: 22,
     duplicator: true,
     group: "step 2"
   },
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q23.id,
     order: 23,
     duplicator: true,
@@ -1184,7 +1184,7 @@ Hanuman::SurveyQuestion.create([
 #report level single entry
 Hanuman::SurveyQuestion.create([
   {
-    survey_template_id: general_outbreak_survey_long_term_care.id,
+    survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q24.id,
     order: 24,
     duplicator: false,
