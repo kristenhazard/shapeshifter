@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140320052921) do
+ActiveRecord::Schema.define(version: 20140320222804) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -83,7 +83,7 @@ ActiveRecord::Schema.define(version: 20140320052921) do
   create_table "hanuman_survey_questions", force: true do |t|
     t.integer  "survey_template_id"
     t.integer  "question_id"
-    t.integer  "order"
+    t.integer  "sort_order"
     t.string   "group"
     t.boolean  "duplicator",         default: false
     t.datetime "created_at"
