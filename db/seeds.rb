@@ -66,7 +66,7 @@ generic_survey = Hanuman::SurveyTemplate.create(
 )
 
 puts "Create Questions"
-#step 1
+#step_1
 x_q1 = Hanuman::Question.create(question_text: 'Text', answer_type_id: answer_text.id)
 x_q2 = Hanuman::Question.create(question_text: 'Date', answer_type_id: answer_date.id)
 x_q3 = Hanuman::Question.create(question_text: 'Time', answer_type_id: answer_time.id)
@@ -79,13 +79,13 @@ x_q9 = Hanuman::Question.create(question_text: 'MultiSelect', answer_type_id: an
 x_q10 = Hanuman::Question.create(question_text: 'TypeAhead', answer_type_id: answer_typeahead.id)
 x_q11 = Hanuman::Question.create(question_text: 'ChosenSelect', answer_type_id: answer_chosenselect.id)
 x_q12 = Hanuman::Question.create(question_text: 'ChosenMultiSelect', answer_type_id: answer_chosenmultiselect.id)
-#step 2
+#step_2
 x_q13 = Hanuman::Question.create(question_text: 'Duplicator Text', answer_type_id: answer_text.id)
 x_q14 = Hanuman::Question.create(question_text: 'Duplicator Date 1', answer_type_id: answer_date.id)
 x_q15 = Hanuman::Question.create(question_text: 'Duplicator Date 2', answer_type_id: answer_date.id)
 x_q16 = Hanuman::Question.create(question_text: 'ChosenSelect', answer_type_id: answer_chosenselect.id)
 x_q17 = Hanuman::Question.create(question_text: 'ChosenMultiSelect', answer_type_id: answer_chosenmultiselect.id)
-#step 3
+#step_3
 x_q18 = Hanuman::Question.create(question_text: 'TextArea', answer_type_id: answer_textarea.id)
 
 puts "Create Answer Choices"
@@ -149,128 +149,128 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: generic_survey.id,
     question_id: x_q1.id,
-    order: 1,
+    sort_order: 1,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q2.id,
-    order: 2,
+    sort_order: 2,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q3.id,
-    order: 3,
+    sort_order: 3,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q4.id,
-    order: 4,
+    sort_order: 4,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q5.id,
-    order: 5,
+    sort_order: 5,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q6.id,
-    order: 6,
+    sort_order: 6,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q7.id,
-    order: 7,
+    sort_order: 7,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q8.id,
-    order: 8,
+    sort_order: 8,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q9.id,
-    order: 9,
+    sort_order: 9,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q10.id,
-    order: 10,
+    sort_order: 10,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q11.id,
-    order: 11,
+    sort_order: 11,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q12.id,
-    order: 12,
+    sort_order: 12,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q13.id,
-    order: 13,
+    sort_order: 13,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q14.id,
-    order: 14,
+    sort_order: 14,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q15.id,
-    order: 15,
+    sort_order: 15,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q16.id,
-    order: 16,
+    sort_order: 16,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q17.id,
-    order: 17,
+    sort_order: 17,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: generic_survey.id,
     question_id: x_q18.id,
-    order: 18,
+    sort_order: 18,
     duplicator: false,
-    group: "step 3"
+    group: "step_3"
   }
 ])
 
@@ -297,58 +297,58 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: bio_resources_survey.id,
     question_id: y_q1.id,
-    order: 1,
+    sort_order: 1,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: bio_resources_survey.id,
     question_id: y_q2.id,
-    order: 2,
+    sort_order: 2,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: bio_resources_survey.id,
     question_id: y_q3.id,
-    order: 3,
+    sort_order: 3,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: bio_resources_survey.id,
     question_id: y_q4.id,
-    order: 4,
+    sort_order: 4,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: bio_resources_survey.id,
     question_id: y_q5.id,
-    order: 5,
+    sort_order: 5,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: bio_resources_survey.id,
     question_id: y_q6.id,
-    order: 6,
+    sort_order: 6,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: bio_resources_survey.id,
     question_id: y_q7.id,
-    order: 7,
+    sort_order: 7,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: bio_resources_survey.id,
     question_id: y_q8.id,
-    order: 8,
+    sort_order: 8,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   }
 ])
 
@@ -467,37 +467,37 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q1.id,
-    order: 1,
+    sort_order: 1,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q2.id,
-    order: 2,
+    sort_order: 2,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q3.id,
-    order: 3,
+    sort_order: 3,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q4.id,
-    order: 4,
+    sort_order: 4,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q5.id,
-    order: 5,
+    sort_order: 5,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   }
 ])
 #line list multi person entry
@@ -505,128 +505,128 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q6.id,
-    order: 6,
+    sort_order: 6,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q7.id,
-    order: 7,
+    sort_order: 7,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q8.id,
-    order: 8,
+    sort_order: 8,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q9.id,
-    order: 9,
+    sort_order: 9,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q10.id,
-    order: 10,
+    sort_order: 10,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q11.id,
-    order: 11,
+    sort_order: 11,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q12.id,
-    order: 12,
+    sort_order: 12,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q13.id,
-    order: 13,
+    sort_order: 13,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q14.id,
-    order: 14,
+    sort_order: 14,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q15.id,
-    order: 15,
+    sort_order: 15,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q16.id,
-    order: 16,
+    sort_order: 16,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q17.id,
-    order: 17,
+    sort_order: 17,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q18.id,
-    order: 18,
+    sort_order: 18,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q19.id,
-    order: 19,
+    sort_order: 19,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q20.id,
-    order: 20,
+    sort_order: 20,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q21.id,
-    order: 21,
+    sort_order: 21,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q22.id,
-    order: 22,
+    sort_order: 22,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q23.id,
-    order: 23,
+    sort_order: 23,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   }
 ])
 #report level single entry
@@ -634,9 +634,9 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_long_term_care.id,
     question_id: a_q24.id,
-    order: 24,
+    sort_order: 24,
     duplicator: false,
-    group: "step 3"
+    group: "step_3"
   }
 ])
 
@@ -755,37 +755,37 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q1.id,
-    order: 1,
+    sort_order: 1,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q2.id,
-    order: 2,
+    sort_order: 2,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q3.id,
-    order: 3,
+    sort_order: 3,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q4.id,
-    order: 4,
+    sort_order: 4,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q5.id,
-    order: 5,
+    sort_order: 5,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   }
 ])
 #line list multi person entry
@@ -793,128 +793,128 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q6.id,
-    order: 6,
+    sort_order: 6,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q7.id,
-    order: 7,
+    sort_order: 7,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q8.id,
-    order: 8,
+    sort_order: 8,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q9.id,
-    order: 9,
+    sort_order: 9,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q10.id,
-    order: 10,
+    sort_order: 10,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q11.id,
-    order: 11,
+    sort_order: 11,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q12.id,
-    order: 12,
+    sort_order: 12,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q13.id,
-    order: 13,
+    sort_order: 13,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q14.id,
-    order: 14,
+    sort_order: 14,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q15.id,
-    order: 15,
+    sort_order: 15,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q16.id,
-    order: 16,
+    sort_order: 16,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q17.id,
-    order: 17,
+    sort_order: 17,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q18.id,
-    order: 18,
+    sort_order: 18,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q19.id,
-    order: 19,
+    sort_order: 19,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q20.id,
-    order: 20,
+    sort_order: 20,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q21.id,
-    order: 21,
+    sort_order: 21,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q22.id,
-    order: 22,
+    sort_order: 22,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q23.id,
-    order: 23,
+    sort_order: 23,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   }
 ])
 #report level single entry
@@ -922,9 +922,9 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_school.id,
     question_id: b_q24.id,
-    order: 24,
+    sort_order: 24,
     duplicator: false,
-    group: "step 3"
+    group: "step_3"
   }
 ])
 
@@ -1043,37 +1043,37 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q1.id,
-    order: 1,
+    sort_order: 1,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q2.id,
-    order: 2,
+    sort_order: 2,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q3.id,
-    order: 3,
+    sort_order: 3,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q4.id,
-    order: 4,
+    sort_order: 4,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q5.id,
-    order: 5,
+    sort_order: 5,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   }
 ])
 #line list multi person entry
@@ -1081,128 +1081,128 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q6.id,
-    order: 6,
+    sort_order: 6,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q7.id,
-    order: 7,
+    sort_order: 7,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q8.id,
-    order: 8,
+    sort_order: 8,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q9.id,
-    order: 9,
+    sort_order: 9,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q10.id,
-    order: 10,
+    sort_order: 10,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q11.id,
-    order: 11,
+    sort_order: 11,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q12.id,
-    order: 12,
+    sort_order: 12,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q13.id,
-    order: 13,
+    sort_order: 13,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q14.id,
-    order: 14,
+    sort_order: 14,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q15.id,
-    order: 15,
+    sort_order: 15,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q16.id,
-    order: 16,
+    sort_order: 16,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q17.id,
-    order: 17,
+    sort_order: 17,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q18.id,
-    order: 18,
+    sort_order: 18,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q19.id,
-    order: 19,
+    sort_order: 19,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q20.id,
-    order: 20,
+    sort_order: 20,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q21.id,
-    order: 21,
+    sort_order: 21,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q22.id,
-    order: 22,
+    sort_order: 22,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q23.id,
-    order: 23,
+    sort_order: 23,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   }
 ])
 #report level single entry
@@ -1210,9 +1210,9 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_hospital_clinic.id,
     question_id: c_q24.id,
-    order: 24,
+    sort_order: 24,
     duplicator: false,
-    group: "step 3"
+    group: "step_3"
   }
 ])
 
@@ -1378,37 +1378,37 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q1.id,
-    order: 1,
+    sort_order: 1,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q2.id,
-    order: 2,
+    sort_order: 2,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q3.id,
-    order: 3,
+    sort_order: 3,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q4.id,
-    order: 4,
+    sort_order: 4,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q5.id,
-    order: 5,
+    sort_order: 5,
     duplicator: false,
-    group: "step 1"
+    group: "step_1"
   }
 ])
 #line list multi person entry
@@ -1416,408 +1416,408 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q6.id,
-    order: 6,
+    sort_order: 6,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q7.id,
-    order: 7,
+    sort_order: 7,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q8.id,
-    order: 8,
+    sort_order: 8,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q9.id,
-    order: 9,
+    sort_order: 9,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q10.id,
-    order: 10,
+    sort_order: 10,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q11.id,
-    order: 11,
+    sort_order: 11,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q12.id,
-    order: 12,
+    sort_order: 12,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q13.id,
-    order: 13,
+    sort_order: 13,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q14.id,
-    order: 14,
+    sort_order: 14,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q15.id,
-    order: 15,
+    sort_order: 15,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q16.id,
-    order: 16,
+    sort_order: 16,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q17.id,
-    order: 17,
+    sort_order: 17,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q18.id,
-    order: 18,
+    sort_order: 18,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q19.id,
-    order: 19,
+    sort_order: 19,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q20.id,
-    order: 20,
+    sort_order: 20,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q21.id,
-    order: 21,
+    sort_order: 21,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q22.id,
-    order: 22,
+    sort_order: 22,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q23.id,
-    order: 23,
+    sort_order: 23,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q24.id,
-    order: 24,
+    sort_order: 24,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q25.id,
-    order: 25,
+    sort_order: 25,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q26.id,
-    order: 26,
+    sort_order: 26,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q27.id,
-    order: 27,
+    sort_order: 27,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q28.id,
-    order: 28,
+    sort_order: 28,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q29.id,
-    order: 29,
+    sort_order: 29,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q30.id,
-    order: 30,
+    sort_order: 30,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q31.id,
-    order: 31,
+    sort_order: 31,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q32.id,
-    order: 32,
+    sort_order: 32,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q33.id,
-    order: 33,
+    sort_order: 33,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q34.id,
-    order: 34,
+    sort_order: 34,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q35.id,
-    order: 35,
+    sort_order: 35,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q36.id,
-    order: 36,
+    sort_order: 36,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q37.id,
-    order: 37,
+    sort_order: 37,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q38.id,
-    order: 38,
+    sort_order: 38,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q39.id,
-    order: 39,
+    sort_order: 39,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q40.id,
-    order: 40,
+    sort_order: 40,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q41.id,
-    order: 41,
+    sort_order: 41,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q42.id,
-    order: 42,
+    sort_order: 42,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q43.id,
-    order: 43,
+    sort_order: 43,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q44.id,
-    order: 44,
+    sort_order: 44,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q45.id,
-    order: 45,
+    sort_order: 45,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q46.id,
-    order: 46,
+    sort_order: 46,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q47.id,
-    order: 47,
+    sort_order: 47,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q48.id,
-    order: 48,
+    sort_order: 48,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q49.id,
-    order: 49,
+    sort_order: 49,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q50.id,
-    order: 50,
+    sort_order: 50,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q51.id,
-    order: 51,
+    sort_order: 51,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q52.id,
-    order: 52,
+    sort_order: 52,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q53.id,
-    order: 53,
+    sort_order: 53,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q54.id,
-    order: 54,
+    sort_order: 54,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q55.id,
-    order: 55,
+    sort_order: 55,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q56.id,
-    order: 56,
+    sort_order: 56,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q57.id,
-    order: 57,
+    sort_order: 57,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q58.id,
-    order: 58,
+    sort_order: 58,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q59.id,
-    order: 59,
+    sort_order: 59,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q60.id,
-    order: 60,
+    sort_order: 60,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q61.id,
-    order: 61,
+    sort_order: 61,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q62.id,
-    order: 62,
+    sort_order: 62,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   },
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q63.id,
-    order: 63,
+    sort_order: 63,
     duplicator: true,
-    group: "step 2"
+    group: "step_2"
   }
 ])
 #report level single entry
@@ -1825,8 +1825,8 @@ Hanuman::SurveyQuestion.create([
   {
     survey_template_id: general_outbreak_survey_animal.id,
     question_id: d_q64.id,
-    order: 64,
+    sort_order: 64,
     duplicator: false,
-    group: "step 3"
+    group: "step_3"
   }
 ])
